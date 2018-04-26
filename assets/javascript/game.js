@@ -18,6 +18,13 @@ alert("Try your luck, select any letter of the alphabet and see if you can beat 
         //     alert("Please select alaphabet letters only!");
         // }
 
+        // function myFunction(check) {
+        //     var x = check.charCode || check.keyCode;
+        //     if (x >= 65 || x <= 90) {  // o is 111, O is 79
+        //         alert("Please select alaphabet letters only!");
+        //     }
+        // }
+
     document.onkeyup = function(event) {
         var userGuess = String.fromCharCode(event.keyCode).toLowerCase();  
         var computerGuess = computerChoices[Math.floor(Math.random()*computerChoices.length)]; 
